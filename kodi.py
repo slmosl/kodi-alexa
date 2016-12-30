@@ -642,7 +642,7 @@ def PlayerRotateCounterClockwise():
 
 # TV
 
-def StartTV(addon_id, params={}):
+def StartTV():
   return AddonExecute("script.json-cec", {"command":"activate"})
 
 # Addons
