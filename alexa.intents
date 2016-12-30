@@ -47,6 +47,10 @@
       "slots": []
     },
     {
+      "intent": "StartTV",
+      "slots": []
+    },
+    {
       "intent": "PlayerSeekSmallForward",
       "slots": []
     },

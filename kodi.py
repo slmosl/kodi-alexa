@@ -640,6 +640,10 @@ def PlayerRotateCounterClockwise():
   if playerid:
     return SendCommand(RPCString("Player.Rotate", {"playerid":playerid, "value":"counterclockwise"}))
 
+# TV
+
+def StartTV(addon_id, params={}):
+  return AddonExecute("script.json-cec", {"command":"activate"})
 
 # Addons
 

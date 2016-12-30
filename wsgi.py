@@ -257,6 +257,15 @@ def alexa_play_pause(slots):
   answer = ""
   return build_alexa_response(answer, card_title)
 
+def alexa_start_tv(slots):
+  card_title = 'Starting TV'
+  print card_title
+  sys.stdout.flush()
+
+  kodi.StartTV()
+  answer = ""
+  return build_alexa_response(answer, card_title)
+
 
 # Handle the Stop intent.
 def alexa_stop(slots):
@@ -1813,6 +1822,7 @@ INTENTS = [
   ['ShuffleVideoPlaylist', alexa_shuffle_video_playlist],
   ['ShufflePlaylist', alexa_shuffle_playlist],
   ['PlayPause', alexa_play_pause],
+  ['StartTV', alexa_start_tv],
   ['Stop', alexa_stop],
   ['Skip', alexa_skip],
   ['Prev', alexa_prev],
